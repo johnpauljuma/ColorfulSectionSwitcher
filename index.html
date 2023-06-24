@@ -4,67 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>menu</title>
-    <style>
-        #container{
-            width: 60em;
-            height: 20em;
-            border: solid 2px;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: none;
-                       
-            
-            
-        }
-        #child1{
-            height: 100%;
-            width: 15.8em;
-            border-top: 0;
-            border-right: solid 2px;
-            display: flex;
-            
-            justify-content: center;
-            align-content: center;
-            
-            
-        }
-        #child2{
-            height: 100%;
-            width: 44em;
-            border-top: 0;
-            display: flex;
-            
-            justify-content: center;
-            align-content: center;
-            
-            
-            
-        }
-        #footer{
-            width: 60em;
-            border: solid 2px;
-            border-top: 0;
-            justify-content: center;
-            align-content: center;
-            
-            height: 2em;
-        }
-        #header{
-            width: 60em;
-            border: solid 2px;
-            border-bottom: 0;
-            height: 3em;
-            justify-content: center;
-            align-content: center;
-        }
-        #button{
-            float: right;
-            margin: 4px;
-            
-        }
-    </style>
+    <title>Colorful Section Switcher</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js">
+    </script>
 </head>
+
 <body>
     <div style="width: 60em;">
         <div id="header">Heading</div>
@@ -73,86 +18,11 @@
             <div id="child2">Main content</div>
         </div>
         <div id="footer">Footer</div>
-        <button id="button" onclick="Previous()">Previous</button>
         <button id="button" onclick="next()">Next</button>
+        <button id="button" onclick="Previous()">Previous</button>
+        
 
 
-        <script>
-            document.getElementById("header").style.backgroundColor="red";
-            document.getElementById("footer").style.backgroundColor="pink";
-            document.getElementById("child1").style.backgroundColor="purple";
-            document.getElementById("child2").style.backgroundColor="orange";
-            document.getElementById("container").style.backgroundColor="orange";
-            function next()
-            {
-                if(document.getElementById("header").style.backgroundColor=="red" )
-                {
-                    document.getElementById("header").style.backgroundColor="orange";
-                    document.getElementById("footer").style.backgroundColor="red";
-                    document.getElementById("child1").style.backgroundColor="pink";
-                    document.getElementById("child2").style.backgroundColor="purple";
-                    document.getElementById("container").style.backgroundColor="purple";
-                }
-                else if(document.getElementById("header").style.backgroundColor=="orange" )
-                {
-                    document.getElementById("header").style.backgroundColor="purple";
-                    document.getElementById("footer").style.backgroundColor="orange";
-                    document.getElementById("child1").style.backgroundColor="red";
-                    document.getElementById("child2").style.backgroundColor="pink";
-                    document.getElementById("container").style.backgroundColor="pink";
-                }
-                else if(document.getElementById("header").style.backgroundColor=="purple" )
-                {
-                    document.getElementById("header").style.backgroundColor="pink";
-                    document.getElementById("footer").style.backgroundColor="purple";
-                    document.getElementById("child1").style.backgroundColor="orange";
-                    document.getElementById("child2").style.backgroundColor="red";
-                    document.getElementById("container").style.backgroundColor="red";
-                }
-                else{
-                    document.getElementById("header").style.backgroundColor="red";
-                    document.getElementById("footer").style.backgroundColor="pink";
-                    document.getElementById("child1").style.backgroundColor="purple";
-                    document.getElementById("child2").style.backgroundColor="orange";
-                    document.getElementById("container").style.backgroundColor="orange";
-                }
-            }
-            function Previous()
-            {
-                if(document.getElementById("header").style.backgroundColor=="orange" )
-                {
-                    document.getElementById("header").style.backgroundColor="red";
-                    document.getElementById("footer").style.backgroundColor="pink";
-                    document.getElementById("child1").style.backgroundColor="purple";
-                    document.getElementById("child2").style.backgroundColor="orange";
-                    document.getElementById("container").style.backgroundColor="orange";
-                }
-                else if(document.getElementById("header").style.backgroundColor=="purple" )
-                {
-                    document.getElementById("header").style.backgroundColor="orange";
-                    document.getElementById("footer").style.backgroundColor="red";
-                    document.getElementById("child1").style.backgroundColor="pink";
-                    document.getElementById("child2").style.backgroundColor="purple";
-                    document.getElementById("container").style.backgroundColor="purple";
-                }
-                else if(document.getElementById("header").style.backgroundColor=="pink" )
-                {
-                    document.getElementById("header").style.backgroundColor="purple";
-                    document.getElementById("footer").style.backgroundColor="orange";
-                    document.getElementById("child1").style.backgroundColor="red";
-                    document.getElementById("child2").style.backgroundColor="pink";
-                    document.getElementById("container").style.backgroundColor="pink";
-                }
-                else{
-                    document.getElementById("header").style.backgroundColor="pink";
-                    document.getElementById("footer").style.backgroundColor="purple";
-                    document.getElementById("child1").style.backgroundColor="orange";
-                    document.getElementById("child2").style.backgroundColor="red";
-                    document.getElementById("container").style.backgroundColor="red";
-                }
-            }
-                
-        </script>
     </div>
 </body>
 </html>

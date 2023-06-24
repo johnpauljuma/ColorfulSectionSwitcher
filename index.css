@@ -1,0 +1,57 @@
+#container{
+    width: 60em;
+    height: 20em;
+    border: solid 2px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+               
+    
+    
+}
+#child1{
+    height: 100%;
+    width: 15.8em;
+    border-top: 0;
+    border-right: solid 2px;
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    
+    
+}
+#child2{
+    height: 100%;
+    width: 44em;
+    border-top: 0;
+    display: flex;
+    
+    justify-content: center;
+    align-content: center;
+    
+    
+    
+}
+#footer{
+    width: 60em;
+    border: solid 2px;
+    border-top: 0;
+    justify-content: center;
+    align-content: center;
+    
+    height: 2em;
+}
+#header{
+    width: 60em;
+    border: solid 2px;
+    border-bottom: 0;
+    height: 3em;
+    justify-content: center;
+    align-content: center;
+}
+#button{
+    float: right;
+    margin: 4px;
+    
+}
