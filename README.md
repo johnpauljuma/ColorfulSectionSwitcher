@@ -1,0 +1,4 @@
+# ColorfulSectionSwitcher
+Colorful Section Switcher - Easily explore different color arrangements for a four-section design (header, menu, content, footer). Switch between pink, purple, orange, and red backgrounds using next/previous buttons. 
+- A web interface that allows designers to experiment with different color arrangements for a four-section design. The sections include a header, menu, main content, and footer, each assigned a distinct background color. By utilizing the next and previous buttons, designers can effortlessly cycle through various color combinations, enabling quick visualization of different design possibilities. The code is thoughtfully developed to facilitate easy customization of the color palette, ensuring minimal changes are required to accommodate new sets of four colors.
+- Designed using HTML, CSS and Javascript
